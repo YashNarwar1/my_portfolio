@@ -10,52 +10,60 @@ const Project = () => {
       </h1>
       <div className="grid mt-10 grid-cols-1 gap-12  lg:grid-cols-5 ">
         <div className=" lg:col-span-3 col-span-1">
-          <Card
-            className=" h-[20rem]"
-            classNameHeader={"text-2xl"}
-            height={"min-h-[20rem]"}
-            imageUrl={"/jira.png"}
-            title={"Jira Clone"}
-            description={
-              "An all rounder application for mangement of projects with adding tasks and a lot's more features."
-            }
-          />
+          <Link to={`/projects/${project.id}`}>
+            <Card
+              className=" h-[20rem]"
+              classNameHeader={"text-2xl"}
+              height={"min-h-[20rem]"}
+              imageUrl={"/jira.png"}
+              title={"Jira Clone"}
+              description={
+                "An all rounder application for mangement of projects with adding tasks and a lot's more features."
+              }
+            />
+          </Link>
         </div>
         <div className=" lg:col-span-2 col-span-1">
-          <Card
-            imageUrl={"/food_app.png"}
-            classNameHeader={"text-2xl"}
-            className={"h-[20rem]"}
-            height={"min-h-[20rem]"}
-            title={"Food Ordering App"}
-            description={
-              "A robust appliaction with multiple user friendly features for ordering food to opening your own shop to sell everythng in one application."
-            }
-          />
+          <Link to={`/projects/${project.id}`}>
+            <Card
+              imageUrl={"/food_app.png"}
+              classNameHeader={"text-2xl"}
+              className={"h-[20rem]"}
+              height={"min-h-[20rem]"}
+              title={"Food Ordering App"}
+              description={
+                "A robust appliaction with multiple user friendly features for ordering food to opening your own shop to sell everythng in one application."
+              }
+            />
+          </Link>
         </div>
         <div className=" lg:col-span-2 col-span-1 ">
-          <Card
-            imageUrl={"/bloom_chat.png"}
-            className={"h-[20rem]"}
-            classNameHeader={"text-2xl"}
-            height={"min-h-[20rem]"}
-            title={"Bloom Chat"}
-            description={
-              "A robust chat application with multiple user friendly features."
-            }
-          />
+          <Link to={`/projects/${project.id}`}>
+            <Card
+              imageUrl={"/bloom_chat.png"}
+              className={"h-[20rem]"}
+              classNameHeader={"text-2xl"}
+              height={"min-h-[20rem]"}
+              title={"Bloom Chat"}
+              description={
+                "A robust chat application with multiple user friendly features."
+              }
+            />
+          </Link>
         </div>
         <div className=" lg:col-span-3 col-span-1">
-          <Card
-            className="lg:px-30 h-[20rem]"
-            classNameHeader={"text-2xl"}
-            height={"min-h-[20rem]"}
-            imageUrl={"/taskify.png"}
-            title={"Taskify"}
-            description={
-              "An all rounder application for mangement of big projects with mutiple users  with many boards to plan and manage your projects and a lot's more features."
-            }
-          />
+          <Link to={`/projects/${project.id}`}>
+            <Card
+              className="lg:px-30 h-[20rem]"
+              classNameHeader={"text-2xl"}
+              height={"min-h-[20rem]"}
+              imageUrl={"/taskify.png"}
+              title={"Taskify"}
+              description={
+                "An all rounder application for mangement of big projects with mutiple users  with many boards to plan and manage your projects and a lot's more features."
+              }
+            />
+          </Link>
         </div>
       </div>
       <div className="flex w-full py-10 justify-end">

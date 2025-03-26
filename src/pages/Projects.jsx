@@ -16,18 +16,16 @@ const Projects = () => {
       </p>
       <div className="w-full  flex flex-col gap-20  mt-15">
         {data.map((project) => (
-          <Link to={`/projects/${project.id}`}>
-            <CardProjects
-              key={project.id}
-              className="lg:px-55 h-[50rem]"
-              height={"h-[25rem] md:h-[40rem] "}
-              classNameHeader={"text-4xl md:text-6xl"}
-              imageUrl={project.imageUrl}
-              title={project.title}
-              description={project.description}
-              projectsId={project.id}
-            />
-          </Link>
+          <CardProjects
+            key={project.id}
+            className="lg:px-55 h-[50rem] pointer-cursor"
+            height={"h-[25rem] md:h-[40rem] "}
+            classNameHeader={"text-4xl md:text-6xl"}
+            imageUrl={project.imageUrl}
+            title={project.title}
+            description={project.description}
+            projectsId={project.id}
+          />
         ))}
       </div>
     </div>
