@@ -19,4 +19,3 @@ const AnimateLayout = ({ children }) => {
 };
 
 export default AnimateLayout;
-np;
