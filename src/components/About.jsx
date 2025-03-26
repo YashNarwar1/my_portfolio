@@ -80,7 +80,7 @@ const About = () => {
           </h1>
           <div className="grid grid-cols-3 px-4 gap-5">
             {tecStack.map((stack) => (
-              <StackCard className="p-4 border-2 border-slate-500   flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
+              <StackCard className="p-1 lg:p-4 border-2 border-slate-500   flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
                 {stack}
               </StackCard>
             ))}
