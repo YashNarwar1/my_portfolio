@@ -70,7 +70,7 @@ const ProjectIdPage = () => {
           </p>
         </div>
       </div>
-      <div className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6 lg:mt-10 grayscale-85">
+      <div className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2  lg:gap-6 lg:mt-10 grayscale-85">
         <img
           src={currentProject.images[0]}
           className="lg:col-span-1 rounded-2xl"
