@@ -14,11 +14,11 @@ const Projects = () => {
         A Collection of projects showcasing my skills in building dynamic,
         scalable and user-friendly applications.
       </p>
-      <div className="w-full  flex flex-col gap-20  mt-15">
+      <div className="w-full  flex flex-col gap-20 ">
         {data.map((project) => (
           <CardProjects
             key={project.id}
-            className="lg:px-55 h-[50rem] pointer-cursor"
+            className="lg:px-55 h-[50rem] pointer-cursor mt-4"
             height={"h-[20rem] md:h-[40rem] "}
             classNameHeader={"text-4xl md:text-6xl"}
             imageUrl={project.imageUrl}
