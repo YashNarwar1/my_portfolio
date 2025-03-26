@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex flex-col gap-2 lg:gap-2 items-center  bg-white">
+    <div className="w-full flex flex-col gap-2 lg:gap-2 items-center  bg-white px-4">
       <div className=" w-full py-15 mt-20 flex flex-col gap-8 lg:flex-row lg:justify-between">
         <div className="flex items-center justify-center lg:justify-start  text-lg gap-6">
           <span className="text-slate-600 font-semibold hover:text-purple-700  cursor-pointer">
