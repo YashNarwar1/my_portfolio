@@ -2,7 +2,7 @@ import { LucideMessageSquareDiff, PhoneCallIcon } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="flex gap-4 flex-col items-center mt-20 md:mt-0  w-full ">
+    <div className="flex gap-4 flex-col items-center mt-20 md:mt-0  w-full px-4">
       <div className="flex flex-col justify-center mt-30 lg:mt-0 lg:flex-row items-center h-screen mx-4 lg:gap-6">
         <div className="flex flex-col gap-5 ">
           <h1 className="text-5xl font-bold tracking-wider">
