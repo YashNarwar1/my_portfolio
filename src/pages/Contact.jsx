@@ -27,11 +27,11 @@ const Contact = () => {
           </p>
         </div>
         <div className=" flex items-center justify-center">
-          <div className="flex items-end justify-center border-2 border-purple-700 rounded-full  w-[25rem] h-[25rem]  mx-auto md:ml-40 mt-20 mb-20 md:0 ">
+          <div className="flex items-end justify-center border-2 border-purple-700 rounded-full  w-[20rem] h-[20rem]  mx-auto md:ml-40 mt-20 mb-20 md:0 ">
             <img
               src="/yash.jpg"
               alt="user"
-              className="w-full h-full grayscale-75  rounded-full p-6 bg-cover"
+              className="w-full h-full grayscale-75  rounded-full p-2 bg-cover"
             />
           </div>
         </div>
