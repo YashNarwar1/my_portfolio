@@ -21,7 +21,7 @@ const ProjectIdPage = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen p-10">
+    <div className="w-full min-h-screen px-4">
       {/* Current Project Info */}
       <h1 className="text-5xl md:text-7xl font-bold mb-8 ">
         {currentProject.title}
@@ -38,7 +38,7 @@ const ProjectIdPage = () => {
 
       {/* Project Details */}
       <div className="w-full min-h-screen flex flex-col lg:flex-row gap-8">
-        <div className="w-[20rem] md:w-[25rem] min-h-[5rem] md:h-[10rem] border-2 rounded-2xl border-purple-700 flex flex-col  lg:sticky top-5 mx-auto  lg:p-6 p-2 ">
+        <div className="w-[20rem] md:w-[25rem] min-h-[5rem] md:h-[10rem] border-2 rounded-2xl border-purple-700 flex flex-col  lg:sticky top-5 mx-auto  lg:p-6  ">
           <div className="flex gap-4 items-center justify-between">
             <h2 className="text-md flex flex-col tracking-wide font-bold mb-1 lg:mb-4">
               Year:{" "}
