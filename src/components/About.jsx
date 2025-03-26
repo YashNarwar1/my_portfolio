@@ -7,6 +7,8 @@ import {
   GitCommitHorizontal,
 } from "lucide-react";
 import { useState } from "react";
+import { StackCard } from "./stackCard";
+import { tecStack } from "../lib/data";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -77,51 +79,11 @@ const About = () => {
             Tec Stack<span className="font-bold text-4xl">.</span>
           </h1>
           <div className="grid grid-cols-3 px-4 gap-5">
-            <span className="p-4 border-1 border-slate-500   flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Javascript
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Typescript
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              CSS
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              React
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Node
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              MongoDB
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Express
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              NextJs
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              TailwindCSS
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Git <GitCommitHorizontal />
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Hono
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Figma
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              HTML5
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Three js
-            </span>
-            <span className="p-4 border-1 border-slate-500  flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
-              Blender
-            </span>
+            {tecStack.map((stack) => (
+              <StackCard className="p-4 border-2 border-slate-500   flex items-center justify-center font-semibold rounded-lg gap-2 cursor-pointer hover:opacity-75">
+                {stack}
+              </StackCard>
+            ))}
           </div>
         </div>
       </div>

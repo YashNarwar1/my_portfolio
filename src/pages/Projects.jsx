@@ -4,7 +4,7 @@ import { data } from "../lib/data.js";
 
 const Projects = () => {
   return (
-    <div className="w-full  flex flex-col">
+    <div className="w-full  flex flex-col px-4">
       <h1 className="text-6xl md:text-8xl  font-bold tracking-tight mt-20 mb-5">
         My <span className="text-purple-700">Best</span> Work
         <span className="text-7xl font-bold text-purple-700">.</span>

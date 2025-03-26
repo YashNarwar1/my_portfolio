@@ -12,7 +12,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "w-full  rounded-xl flex flex-col gap-2 mt-4  px-3 grayscale-70",
+        "w-full  rounded-xl flex flex-col justify-center gap-2 mt-4  px-3 grayscale-70 mb-10 lg:mb-0 ",
         height
       )}>
       <div

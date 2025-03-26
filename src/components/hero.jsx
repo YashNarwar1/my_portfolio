@@ -4,11 +4,7 @@ import { DownloadCv } from "../lib/DownloadCv";
 
 export const Hero = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.4 }}
-      className="flex flex-col lg:flex-row mt-20 mb-15 z-2">
+    <div className="flex flex-col lg:flex-row mt-20 mb-15 z-2 items-center ">
       <div className="flex flex-col  mx-10 lg:w-[50%]">
         <h1 className="text-3xl tracking-tight">Hey, I'm Yash 👋🏻 </h1>
         <h2 className="text-6xl tracking-wide text-black font-bold mb-10">
@@ -37,6 +33,6 @@ export const Hero = () => {
           className="w-full h-full grayscale-75  rounded-full p-6 bg-cover"
         />
       </div>
-    </motion.div>
+    </div>
   );
 };

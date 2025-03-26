@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { data } from "../lib/data.js";
 import { Card } from "../components/card.jsx";
-import { CardProjects } from "../components/CardProjects.jsx";
 
 const ProjectIdPage = () => {
   const { projectId } = useParams();
@@ -24,22 +23,24 @@ const ProjectIdPage = () => {
   return (
     <div className="w-full min-h-screen p-10">
       {/* Current Project Info */}
-      <h1 className="text-7xl font-bold mb-8 ">{currentProject.title}</h1>
-      <p className="text-2xl text-gray-700 mb-7 border-l-8 pl-6 border-purple-700">
+      <h1 className="text-5xl md:text-7xl font-bold mb-8 ">
+        {currentProject.title}
+      </h1>
+      <p className="text-2xl md:text-3xl text-gray-700 mb-7 border-l-8 pl-6 py-6 border-purple-700">
         {currentProject.description}
       </p>
       <Card
         className="lg:px-55 h-[50rem]"
-        height={"h-[25rem] md:h-[40rem] "}
+        height={"h-[20rem] md:h-[25rem] lg:h-[40rem] "}
         classNameHeader={"text-4xl md:text-6xl"}
         imageUrl={currentProject.imageUrl}
       />
 
       {/* Project Details */}
-      <div className="w-full min-h-screen flex gap-8">
-        <div className="w-[25rem] h-[10rem] border-2 rounded-2xl border-purple-700 flex flex-col sticky top-5 mx-8 p-6 ">
+      <div className="w-full min-h-screen flex flex-col lg:flex-row gap-8">
+        <div className="w-[25rem] min-h-[5rem] md:h-[10rem] border-2 rounded-2xl border-purple-700 flex flex-col  lg:sticky top-5 mx-auto  lg:p-6 p-2 ">
           <div className="flex gap-4 items-center justify-between">
-            <h2 className="text-md flex flex-col tracking-wide font-bold mb-4">
+            <h2 className="text-md flex flex-col tracking-wide font-bold mb-1 lg:mb-4">
               Year:{" "}
               <span className="text-xl font-semibold ">
                 {currentProject.Year}
@@ -49,7 +50,7 @@ const ProjectIdPage = () => {
               Personal Project
             </p>
           </div>
-          <p className="text-lg font-semibold text-slate-800 tracking-wider mb-4 flex flex-col">
+          <p className="text-lg font-semibold text-slate-800 tracking-wider mb-1 lg:mb-4 flex flex-col">
             Role: <span>Software Developer</span>
           </p>
         </div>
@@ -69,38 +70,41 @@ const ProjectIdPage = () => {
           </p>
         </div>
       </div>
-      <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      <div className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6 lg:mt-10 grayscale-85">
         <img
           src={currentProject.images[0]}
-          className="col-span-1 rounded-2xl"
+          className="lg:col-span-1 rounded-2xl"
         />
         <img
           src={currentProject.images[1]}
-          className="col-span-1 rounded-2xl"
+          className="lg:col-span-1 rounded-2xl"
         />
         <img
           src={currentProject.images[2]}
-          className="col-span-2 rounded-2xl"
+          className="lg:col-span-2 rounded-2xl"
         />
       </div>
 
       {/* More Projects Section */}
-      <div className="w-full h-screen  items-center justify-center flex-col gap-6 mt-6">
-        <h1 className="text-6xl mb-6 font-bold tracking-wider mt-10">
+      <div className="w-full h-[calc(100vh-10rem)]  lg:flex justify-center  flex-col gap-6 pt-19 mt-10 hidden ">
+        <h1 className="text-6xl  font-bold tracking-wider mt-10">
           More Projects<span className="text-6xl text-purple-700">.</span>
         </h1>
 
-        <div className="h-full w-full flex items-center justify-center ">
+        <div className="h-full w-full flex flex-col lg:flex-row justify-around items-center  ">
           {nextProjects.map((project) => (
-            <CardProjects
-              key={project.id} // Added the missing key prop
-              className="h-[20rem]"
-              height={"h-[25rem] md:h-[40rem] "}
-              imageUrl={project.imageUrl}
-              title={project.title}
-              description={project.description}
-              projectsId={project.id}
-            />
+            <Link to={`/projects/${project.id}`}>
+              <Card
+                key={project.id} // Added the missing key prop
+                className="h-[20rem]"
+                height={"h-[25rem] md:h-[40rem] "}
+                classNameHeader={"text-2xl md:text-4xl"}
+                imageUrl={project.imageUrl}
+                title={project.title}
+                description={project.description}
+                projectsId={project.id}
+              />
+            </Link>
           ))}
         </div>
       </div>

@@ -63,7 +63,7 @@ const About = () => {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full px-4">
       <div className="w-full flex flex-col md:flex-row gap-x-4 items-center p-3 ">
         <div className="relative w-full lg:w-[45%] bg-gray-300 rounded-xl p-6 my-10 overflow-hidden">
           <h1 className="text-3xl font-bold mb-6 py-6 ml-4">
@@ -137,7 +137,7 @@ const About = () => {
         <h1 className=" text-3xl md:text-6xl font-bold tracking-wider mb-8">
           My Story<span className="text-6xl font-bold text-purple-700">.</span>
         </h1>
-        <p className="px-3 text-sm md:text-xl text-slate-700">
+        <p className="px-3 text-lg md:text-xl text-slate-700">
           My journey into web development began with pure curiosity and a drive
           for creativity. Despite graduating with a degree in Economics and
           English, I was drawn to the limitless possibilities of building things

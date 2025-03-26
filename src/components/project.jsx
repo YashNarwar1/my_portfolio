@@ -11,7 +11,7 @@ const Project = () => {
       <div className="grid mt-10 grid-cols-1 gap-12  lg:grid-cols-5 ">
         <div className=" lg:col-span-3 col-span-1">
           <Card
-            className="px-30 h-[20rem]"
+            className=" h-[20rem]"
             classNameHeader={"text-2xl"}
             height={"min-h-[20rem]"}
             imageUrl={"/jira.png"}
