@@ -1,6 +1,7 @@
 import { ArrowBigRightDashIcon } from "lucide-react";
 import { Card } from "./card";
 import { Link } from "react-router-dom";
+import { data } from "../lib/data";
 
 const Project = () => {
   return (
@@ -10,7 +11,7 @@ const Project = () => {
       </h1>
       <div className="grid mt-10 grid-cols-1 gap-12  lg:grid-cols-5 ">
         <div className=" lg:col-span-3 col-span-1">
-          <Link to={`/projects/${project.id}`}>
+          <Link to={`/projects/${data[0].id}`}>
             <Card
               className=" h-[20rem]"
               classNameHeader={"text-2xl"}
@@ -24,7 +25,7 @@ const Project = () => {
           </Link>
         </div>
         <div className=" lg:col-span-2 col-span-1">
-          <Link to={`/projects/${project.id}`}>
+          <Link to={`/projects/${data[1].id}`}>
             <Card
               imageUrl={"/food_app.png"}
               classNameHeader={"text-2xl"}
@@ -38,7 +39,7 @@ const Project = () => {
           </Link>
         </div>
         <div className=" lg:col-span-2 col-span-1 ">
-          <Link to={`/projects/${project.id}`}>
+          <Link to={`/projects/${data[2].id}`}>
             <Card
               imageUrl={"/bloom_chat.png"}
               className={"h-[20rem]"}
@@ -52,7 +53,7 @@ const Project = () => {
           </Link>
         </div>
         <div className=" lg:col-span-3 col-span-1">
-          <Link to={`/projects/${project.id}`}>
+          <Link to={`/projects/${data[3].id}`}>
             <Card
               className="lg:px-30 h-[20rem]"
               classNameHeader={"text-2xl"}
