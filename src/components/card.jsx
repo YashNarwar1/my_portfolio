@@ -21,7 +21,7 @@ export const Card = ({
           className
         )}>
         <div
-          className="w-full h-[90%] rounded-3xl  bg-cover bg-no-repeat"
+          className="w-full h-[80%] md:h-[90%] rounded-3xl  bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${imageUrl})` }}
         />
       </div>

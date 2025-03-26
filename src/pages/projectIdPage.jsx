@@ -31,14 +31,14 @@ const ProjectIdPage = () => {
       </p>
       <Card
         className="lg:px-55 h-[50rem]"
-        height={"h-[20rem] md:h-[25rem] lg:h-[40rem] "}
+        height={"h-[17rem] md:h-[25rem] lg:h-[40rem] "}
         classNameHeader={"text-4xl md:text-6xl"}
         imageUrl={currentProject.imageUrl}
       />
 
       {/* Project Details */}
       <div className="w-full min-h-screen flex flex-col lg:flex-row gap-8">
-        <div className="w-[20rem] md:w-[25rem] min-h-[5rem] md:h-[10rem] border-2 rounded-2xl border-purple-700 flex flex-col  lg:sticky top-5 mx-auto  lg:p-6  ">
+        <div className="w-[20rem] md:w-[25rem] min-h-[5rem] md:h-[10rem] border-2 rounded-2xl border-purple-700 flex flex-col  lg:sticky top-5 mx-auto  lg:p-6 px-3 ">
           <div className="flex gap-4 items-center justify-between">
             <h2 className="text-md flex flex-col tracking-wide font-bold mb-1 lg:mb-4">
               Year:{" "}
