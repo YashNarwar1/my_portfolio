@@ -1,6 +1,12 @@
 import { Link, useParams } from "react-router-dom";
 import { data } from "../lib/data.js";
 import { Card } from "../components/card.jsx";
+import {
+  GitBranch,
+  GitCommitHorizontal,
+  GitFork,
+  LucideCircleArrowOutUpRight,
+} from "lucide-react";
 
 const ProjectIdPage = () => {
   const { projectId } = useParams();
@@ -50,9 +56,18 @@ const ProjectIdPage = () => {
               Personal Project
             </p>
           </div>
-          <p className="text-sm md:text-lg font-semibold text-slate-800 tracking-wider mb-1 lg:mb-4 flex flex-col">
-            Role: <span className="text-md md:text-xl">Software Developer</span>
-          </p>
+          <div className="flex  items-center gap-8">
+            <p className="text-sm md:text-lg font-semibold text-slate-800 tracking-wider mb-1 lg:mb-4 flex flex-col">
+              Role:{" "}
+              <span className="text-md md:text-xl">Software Developer</span>
+            </p>
+            <a href="https://github.com/YashNarwar1">
+              {" "}
+              <p className="w-5 h-5 flex hover:text-purple-700   font-bold cursor-pointer">
+                Github_link
+              </p>{" "}
+            </a>
+          </div>
         </div>
 
         <div className="flex flex-1 flex-col gap-4">

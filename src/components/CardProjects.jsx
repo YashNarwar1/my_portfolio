@@ -41,20 +41,19 @@ export const CardProjects = ({
           }}
         />
       </div>
-      <Link to={`/projects/${projectsId}`}>
-        <h1
-          className={cn(
-            "flex items-center justify-between gap-4  font-bold text-black pt-2",
-            classNameHeader
-          )}>
-          {title}
-
-          <a href="https://github.com/YashNarwar1">
-            {" "}
-            <LucideCircleArrowOutUpRight className="w-5 h-5 hover:text-purple-700 border-1 cursor-pointer" />{" "}
-          </a>
-        </h1>
-      </Link>
+      <div className="flex items-center justify-between gap-4">
+        <Link to={`/projects/${projectsId}`}>
+          <h1
+            className={cn("  font-bold text-black pt-2", classNameHeader)}
+            asChild>
+            {title}
+          </h1>
+        </Link>
+        <a href="https://github.com/YashNarwar1">
+          {" "}
+          <LucideCircleArrowOutUpRight className="w-5 h-5 hover:text-purple-700 border-1 cursor-pointer" />{" "}
+        </a>
+      </div>
       <p className="text-lg text-slate-500 ">{description}</p>
     </div>
   );
