@@ -1,4 +1,4 @@
-import { LucideCircleArrowOutUpRight } from "lucide-react";
+import { GitCommit, LucideCircleArrowOutUpRight } from "lucide-react";
 import { cn } from "../lib/utils";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -44,11 +44,15 @@ export const CardProjects = ({
       <Link to={`/projects/${projectsId}`}>
         <h1
           className={cn(
-            "flex items-center gap-4  font-bold text-black pt-2",
+            "flex items-center justify-between gap-4  font-bold text-black pt-2",
             classNameHeader
           )}>
           {title}
-          <LucideCircleArrowOutUpRight className="w-5 h-5 hover:text-purple-700 border-1 cursor-pointer" />
+
+          <a href="https://github.com/YashNarwar1">
+            {" "}
+            <LucideCircleArrowOutUpRight className="w-5 h-5 hover:text-purple-700 border-1 cursor-pointer" />{" "}
+          </a>
         </h1>
       </Link>
       <p className="text-lg text-slate-500 ">{description}</p>
