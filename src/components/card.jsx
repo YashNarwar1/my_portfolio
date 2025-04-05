@@ -90,7 +90,7 @@ export const Card = ({
             transition: { duration: 0.6, ease: "easeOut" },
           },
         }}
-        className="w-[90%] flex flex-col gap-4 lg:hidden absolute bottom-10 left-10">
+        className="w-full flex flex-col gap-4 lg:hidden absolute bottom-10 left-10">
         <h1 className="text-4xl font-bold tracking-wider text-slate-100 md:text-slate-800">
           {title}
         </h1>
