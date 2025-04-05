@@ -25,7 +25,7 @@ export const MoreProjectCard = ({
 
   return (
     <div className="relative">
-      <div className="w-[calc(100%-1rem)] xl:w-[calc(100%-5rem)] mx-auto h-[50%]  flex rounded-2xl border-2 overflow-hidden">
+      <div className="w-[calc(100%-1rem)] xl:w-[calc(100%-5rem)] mx-auto h-[50%]  flex gap-4 rounded-2xl border-2 overflow-hidden">
         <motion.div
           ref={ref}
           initial="hidden"
