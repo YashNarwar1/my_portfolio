@@ -25,12 +25,12 @@ export const CardProjects = ({
     <div
       ref={containerRef}
       className={cn(
-        "w-full h-screen sticky top-2 bg-white  rounded-xl flex flex-col gap-2 mt-4  px-3 grayscale-70",
+        "w-full h-screen sticky top-2 bg-white  rounded-xl flex flex-col gap-2 mt-4  px-3 ",
         height
       )}>
       <div
         className={cn(
-          "flex items-center justify-center w-full h-full overflow-hidden  px-10  rounded-xl bg-[url('/bg.jpg')] bg-cover filter-grayscale hover:filter-none",
+          "flex items-center justify-center w-full h-full overflow-hidden  px-10  rounded-xl bg-[url('/bg.png')] bg-cover filter-grayscale hover:filter-none",
           className
         )}>
         <motion.div

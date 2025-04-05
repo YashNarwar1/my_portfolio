@@ -4,7 +4,8 @@ export const data = [
     title: "Jira Clone",
     description:
       "An all-rounder application for project management with task tracking.",
-    imageUrl: "/jira.png",
+    imageUrl: "/jira2.png",
+    smallImageUrl: "/jira_sm.png",
     Details: `A Jira-inspired project management tool designed for seamless task
     tracking, issue management, and team collaboration. It allows users
     to create, assign, and prioritize tasks with detailed statuses,
@@ -23,7 +24,8 @@ export const data = [
     title: "Food Ordering App",
     description:
       "A full-stack platform for food ordering with seller and customer roles.",
-    imageUrl: "/food_app.png",
+    imageUrl: "/food2.png",
+    smallImageUrl: "/food_sm.png",
     Details: `A food ordering platform where users can act as both sellers and customers. Sellers can add, edit, and manage their products, while customers can browse, add items to their cart, and place orders. The app includes authentication, product filtering, and checkout functionality.`,
     Challanges: `Dual-role system: Role-based authentication for sellers and customers.
     Cart management: Real-time cart updates using Zustand.
@@ -41,7 +43,8 @@ export const data = [
     title: "Bloom Chat App",
     description:
       "A real-time chat application with group and direct messaging.",
-    imageUrl: "/chat.png",
+    imageUrl: "/chat2.png",
+    smallImageUrl: "/chat_sm.png",
     Details: `A real-time chat application enabling seamless communication between users. It offers one-on-one and group messaging, message status indicators, and real-time typing indicators. The app includes authentication, user profiles, and message history.`,
     Challanges: `Real-time messaging: Using Socket.io for instant communication.
     Database management: Storing and retrieving message history with MongoDB.
@@ -54,7 +57,8 @@ export const data = [
     id: "4",
     title: "Taskify",
     description: "A full-featured task management app for project planning.",
-    imageUrl: "/taskify.png",
+    imageUrl: "/taskify2.png",
+    smallImageUrl: "/taskify_sm.png",
     Details: `Taskify is designed to help users efficiently organize and prioritize their tasks. It offers features like task creation, editing, and deletion, along with status updates, deadlines, and priority labeling. The app includes authentication for secure access and personalized task boards.`,
     Challanges: `State management: Using Zustand for consistent task synchronization.
     CRUD operations: Efficient Create, Read, Update, and Delete functionality with MongoDB.
