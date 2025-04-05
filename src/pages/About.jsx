@@ -63,7 +63,15 @@ const About = () => {
   };
 
   return (
-    <div className="w-full px-4">
+    <div className="w-full px-4 flex flex-col ">
+      <h1 className="text-7xl font-bold tracking-wider my-6">
+        About Me
+        <span className="text-5xl font-bold text-purple-700">.</span>
+      </h1>
+      <p className="text-2xl text-slate-609 mb-10 border-l-5 border-purple-600 pl-4">
+        Feel free to reach out if you have any questions or just want to
+        connect. I'm always open to new opportunities and collaborations!
+      </p>
       <div className="w-full flex flex-col md:flex-row gap-x-4 items-center p-3 ">
         <div className="relative w-full lg:w-[45%] bg-gray-300 rounded-xl p-6 my-10 overflow-hidden">
           <h1 className="text-3xl font-bold mb-6 py-6 ml-4">
@@ -110,7 +118,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center grayscale-75">
+        <div className="rounded-3xl w-full sm:h-[17rem] h-fit  overflow-hidden flex justify-center grayscale-75">
           <Globe
             ref={globeRef}
             height={396}
