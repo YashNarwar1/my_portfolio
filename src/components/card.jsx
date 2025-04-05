@@ -71,7 +71,7 @@ export const Card = ({
 
         {/* Right Side Image */}
         <div
-          className="w-full h-full bg-cover bg-no-repeat transition-all duration-300"
+          className="w-full h-full bg-cover bg-no-repeat transition-all rounded-2xl duration-300"
           style={{ backgroundImage }}>
           {/* content */}
         </div>
