@@ -38,7 +38,7 @@ export const MoreProjectCard = ({
               transition: { duration: 0.6, ease: "easeOut" },
             },
           }}
-          className="w-[80%] lg:w-[87%] h-[70%] flex flex-col justify-center gap-4  absolute bottom-5 left-10 bg-black/70 pl-10 overflow-hidden">
+          className="w-[80%] lg:w-[87%] h-[70%] flex flex-col justify-center gap-4  absolute bottom-5 left-1 lg:left-10 bg-black/70 pl-10 overflow-hidden">
           <h1 className="text-2xl font-bold tracking-wider text-slate-200">
             {title}
           </h1>
