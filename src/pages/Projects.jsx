@@ -19,7 +19,7 @@ const Projects = () => {
           <CardProjects
             key={project.id}
             className="lg:px-55 h-[50rem] pointer-cursor mt-4"
-            height={"h-[30rem] md:h-[40rem] "}
+            height={"h-[25rem] md:h-[40rem] "}
             classNameHeader={"text-4xl md:text-6xl"}
             imageUrl={project.imageUrl}
             title={project.title}
