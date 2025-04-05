@@ -118,7 +118,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-3xl w-full h-[17rem]  overflow-hidden flex justify-center grayscale-75">
+        <div className="rounded-3xl w-full h-fit md:h-[17rem]  overflow-hidden flex justify-center grayscale-75">
           <Globe
             ref={globeRef}
             height={396}
