@@ -96,10 +96,10 @@ export const Card = ({
           },
         }}
         className="w-[calc(100%-10rem)] flex flex-col gap-4 lg:hidden absolute bottom-10 left-10">
-        <h1 className="text-4xl font-bold tracking-wider text-slate-100 md:text-slate-800">
+        <h1 className="text-4xl w-full font-bold tracking-wider text-slate-100 md:text-slate-800">
           {title}
         </h1>
-        <p className="text-md font-semibold tracking-wide text-slate-100 md:text-slate-800">
+        <p className="text-md w-full font-semibold tracking-wide text-slate-100 md:text-slate-800">
           {description}
         </p>
         <div className="flex items-start gap-4">
