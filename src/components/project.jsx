@@ -20,7 +20,7 @@ const Project = () => {
       </h1>
 
       {/* Sticky container that pins the horizontal scroll */}
-      <div className="h-screen md:sticky top-0 flex md:flex-row flex-col items-center overflow-hidden">
+      <div className="h-screen md:sticky top-0 flex  items-center overflow-hidden">
         <motion.div
           className="flex gap-[3vw] px-16 w-max"
           style={{ x: smoothX }}>
