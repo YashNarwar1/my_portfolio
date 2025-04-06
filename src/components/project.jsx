@@ -14,13 +14,13 @@ const Project = () => {
   const smoothX = useSpring(x, { stiffness: 70, damping: 30 });
 
   return (
-    <div ref={targetRef} className="h-[500vh]  relative">
+    <div ref={targetRef} className="h-[250vh] md:h-[500vh]  relative">
       <h1 className="text-5xl font-bold tracking-wider my-10 ">
         Projects<span className="text-4xl font-bold text-purple-600">.</span>
       </h1>
 
       {/* Sticky container that pins the horizontal scroll */}
-      <div className="h-screen md:sticky top-0 flex  items-center overflow-hidden">
+      <div className="h-screen sticky top-0 flex  items-center overflow-hidden">
         <motion.div
           className="flex gap-[3vw] px-16 w-max"
           style={{ x: smoothX }}>
