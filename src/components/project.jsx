@@ -11,6 +11,7 @@ const Project = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-70%"]);
+  const smoothX = useSpring(x, { stiffness: 50, damping: 30 });
 
   return (
     <div ref={targetRef} className="h-[150vh] lg:h-[500vh]  relative">
@@ -20,7 +21,9 @@ const Project = () => {
 
       {/* Sticky container that pins the horizontal scroll */}
       <div className="h-screen sticky top-0 flex items-center overflow-hidden">
-        <motion.div className="flex gap-[3vw] px-16 w-max" style={{ x }}>
+        <motion.div
+          className="flex gap-[3vw] px-16 w-max"
+          style={{ x: smoothX }}>
           <div className="flex-none w-[80vw] h-[70vh]">
             <motion.div
               initial={{ opacity: 0, y: 150 }}
