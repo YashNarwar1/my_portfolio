@@ -13,7 +13,7 @@ const Project = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-70%"]);
 
   return (
-    <div ref={targetRef} className="h-[250vh] lg:h-[500vh]  relative">
+    <div ref={targetRef} className="h-[150vh] lg:h-[500vh]  relative">
       <h1 className="text-5xl font-bold tracking-wider my-10 ">
         Projects<span className="text-4xl font-bold text-purple-600">.</span>
       </h1>
