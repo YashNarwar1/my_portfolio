@@ -16,7 +16,7 @@ export const data = [
   },
   {
     id: "2",
-    title: "Food Ordering App",
+    title: "Tasty",
     description:
       "A full-stack food ordering platform with roles for sellers and customers.",
     imageUrl: "/food2.png",

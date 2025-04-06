@@ -22,7 +22,9 @@ const About = () => {
   };
 
   return (
-    <motion.div id="about" className="w-full min-h-screen flex flex-col  py-5">
+    <motion.div
+      id="about"
+      className="w-full min-h-screen flex flex-col  mt-10 py-5">
       <h1 className="text-6xl font-bold tracking-wider   mb-10">
         About<span className="font-bold text-4xl text-purple-700">.</span>
       </h1>

@@ -42,7 +42,12 @@ export const Card = ({
 
   return (
     <div className="relative">
-      <div className="w-[calc(100%-1rem)] xl:w-[calc(100%-5rem)] mx-auto h-[calc(100vh-10rem)]  flex rounded-2xl  overflow-hidden">
+      <div
+        style={{
+          boxShadow:
+            "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px",
+        }}
+        className="w-[calc(100%-1rem)] xl:w-[calc(100%-5rem)] mx-auto h-[calc(100vh-10rem)]  flex rounded-2xl  overflow-hidden">
         {/* Left Panel (Desktop) */}
         <div
           className={cn(

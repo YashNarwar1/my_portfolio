@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 
 const Home = () => {
   return (
-    <div id="home" className="min-h-screen w-full mx-auto  flex flex-col ">
+    <div id="home" className="min-h-screen w-full   flex flex-col ">
       <AnimatePresence>
         <Hero />
         <Project />
