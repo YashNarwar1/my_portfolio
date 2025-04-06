@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 const Project = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-70%"]);
-  const smoothX = useSpring(x, { stiffness: 50, damping: 30 });
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
+  const smoothX = useSpring(x, { stiffness: 70, damping: 30 });
 
   return (
-    <div ref={targetRef} className="h-[150vh] lg:h-[500vh]  relative">
+    <div ref={targetRef} className="h-[400vh] lg:h-[500vh]  relative">
       <h1 className="text-5xl font-bold tracking-wider my-10 ">
         Projects<span className="text-4xl font-bold text-purple-600">.</span>
       </h1>
