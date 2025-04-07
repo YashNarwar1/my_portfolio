@@ -3,18 +3,13 @@ import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-  const mode = "light";
-
   return (
-    <div className="w-full p-4 px-10 hidden justify-between items-center  md:flex">
-      <h1
-        className={cn(
-          "lg md:text-xl font-bold px-2 ",
-          mode === "dark" ? "text-white" : "text-slate-700"
-        )}>
-        YashNW<span className="font-bold text-2xl  text-purple-600">.</span>
+    <div className="max-w-[90rem] mx-auto py-4 hidden justify-between items-center  md:flex">
+      <h1 className={cn("lg md:text-3xl font-bold px-2  text-slate-700")}>
+        YashNW
+        <span className="font-bold text-3xl  text-purple-600">.</span>
       </h1>
-      <div className=" h-full   md:text-lg  px-6  rounded-lg">
+      <div className=" h-full   md:text-xl  px-6  rounded-lg">
         <ul className="flex items-center h-full gap-8 transition duration-500">
           <li className="tracking-wide hover:text-purple-700 cursor-pointer hover:font-semibold ">
             <Link to="/">Home</Link>

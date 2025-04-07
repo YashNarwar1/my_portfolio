@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div
-      className="relative h-[600px]"
+      className="relative h-[600px] "
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0% 100%)" }}>
       <div className=" h-[600px] w-full  right-0 bg-[#1C1C1C] px-10 fixed bottom-0">
         <div className="flex flex-col lg:flex-row justify-between h-full ">
           <div className="flex flex-col mt-10 justify-between">
-            <ul className="flex md:flex-col text-lg justify-between  gap-4 px-5 ">
+            <ul className="flex md:flex-col text-lg justify-between gap-2 sm:gap-4 sm:px-5 ">
               <li className="text-slate-200  hover:text-purple-700 tracking-widest ">
                 <Link to={"/about"}>About</Link>
               </li>
@@ -44,7 +44,7 @@ export const Footer = () => {
               </h1>
             </div>
 
-            <p className="pb-10 px-10 text-slate-400 tracking-wider">
+            <p className="pb-10 px-1 sm:px-10 text-slate-400 tracking-wider">
               @2025 All Rights Are Reserved <br />
               Made with ❣️By Yash Narwar
             </p>

@@ -25,7 +25,7 @@ const About = () => {
     <>
       <motion.div
         id="about"
-        className="w-full min-h-screen flex flex-col  mt-10 py-5 md:px-10">
+        className="w-full min-h-screen flex flex-col  mt-10 py-5 px-3 md:px-10">
         <h1 className="text-6xl font-bold tracking-wider   mb-10">
           About<span className="font-bold text-4xl text-purple-700">.</span>
         </h1>

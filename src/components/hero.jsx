@@ -5,7 +5,7 @@ import { Button } from "./button";
 
 export const Hero = () => {
   return (
-    <div className="flex w-full md:min-h-[100vh] px-4 md:px-10 flex-col lg:flex-row mb-10  items-center    ">
+    <div className="flex w-full md:min-h-[100vh] px-3 md:px-20 flex-col lg:flex-row mb-10  items-center    ">
       <div className="flex flex-col my-20 mx-10 lg:w-[50%]">
         <h1 className="text-3xl tracking-tight">Hey, I'm Yash 👋🏻 </h1>
         <h2 className="text-6xl md:text-8xl tracking-wide text-black font-bold mb-10">
@@ -16,7 +16,7 @@ export const Hero = () => {
           solutions. I build web apps that are fast, functional, and
           user-friendly.
         </p>
-        <div className="flex flex-col sm:flex-row w-full gap-3 sm:gap-6 md:mt-10">
+        <div className="flex flex-col sm:flex-row w-full gap-1 sm:gap-6 md:mt-10">
           <button className="px-4 py-2  w-[10rem] lg:w-[14rem] bg-purple-700 rounded-lg text-xl text-white mt-10 hover:opacity-85    cursor-pointer">
             <Link to="/contact">Get In Touch</Link>
           </button>

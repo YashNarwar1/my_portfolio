@@ -14,7 +14,10 @@ const Project = () => {
   const smoothX = useSpring(x, { stiffness: 70, damping: 30 });
 
   return (
-    <div ref={targetRef} className="h-[500vh] relative pb-10  md:px-10">
+    <div
+      id="projects"
+      ref={targetRef}
+      className="h-[500vh] relative pb-10  md:px-20">
       <h1 className="text-5xl font-bold tracking-wider my-10 ">
         Projects<span className="text-4xl font-bold text-purple-600">.</span>
       </h1>
