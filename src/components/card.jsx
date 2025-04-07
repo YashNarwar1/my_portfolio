@@ -95,8 +95,8 @@ export const Card = ({
             transition: { duration: 0.6, ease: "easeOut" },
           },
         }}
-        className="w-[80%] border-2 flex flex-col gap-4 lg:hidden absolute bottom-10 left-10">
-        <h1 className="text-4xl w-full border-2 font-bold tracking-wider text-slate-100 md:text-slate-800">
+        className="w-[80%]  flex flex-col gap-4 lg:hidden absolute bottom-10 left-10">
+        <h1 className="text-4xl w-full  font-bold tracking-wider text-slate-100 md:text-slate-800">
           {title}
         </h1>
         <p className=" text-md w-full font-semibold tracking-wide text-slate-100 md:text-slate-800">
