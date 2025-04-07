@@ -6,7 +6,7 @@ export const Navbar = () => {
   const mode = "light";
 
   return (
-    <div className="w-full p-4 hidden justify-between items-center  md:flex">
+    <div className="w-full p-4 px-10 hidden justify-between items-center  md:flex">
       <h1
         className={cn(
           "lg md:text-xl font-bold px-2 ",

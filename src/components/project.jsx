@@ -14,7 +14,7 @@ const Project = () => {
   const smoothX = useSpring(x, { stiffness: 70, damping: 30 });
 
   return (
-    <div ref={targetRef} className="h-[250vh] md:h-[500vh]  relative">
+    <div ref={targetRef} className="h-[500vh] relative pb-10  md:px-10">
       <h1 className="text-5xl font-bold tracking-wider my-10 ">
         Projects<span className="text-4xl font-bold text-purple-600">.</span>
       </h1>
@@ -96,10 +96,10 @@ const Project = () => {
       </div>
 
       {/* CTA button */}
-      <div className="flex w-full justify-end pr-16 absolute bottom-0 right-0">
+      <div className="flex w-full justify-end pr-16 absolute bottom-0.5 right-0">
         <Link to="/projects">
-          <button className="w-[12rem] rounded-lg flex items-center justify-center gap-x-4 bg-purple-700 text-slate-200 px-4 py-2 mt-10 cursor-pointer hover:text-white hover:opacity-75">
-            See More
+          <button className="w-[8rem] rounded-lg flex items-center justify-center gap-x-4 bg-purple-700 text-slate-200 px-4 py-2 mt-10 cursor-pointer hover:text-white hover:opacity-75">
+            More
             <ArrowBigRightDashIcon className="w-5 h-5" />
           </button>
         </Link>

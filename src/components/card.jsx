@@ -57,7 +57,7 @@ export const Card = ({
           <h1 className="text-4xl font-bold tracking-wider text-slate-700">
             {title}
           </h1>
-          <p className="text-md font-semibold tracking-wide text-slate-700">
+          <p className="hidden md:block text-md font-semibold tracking-wide text-slate-700">
             {description}
           </p>
           <div className="flex items-start gap-4">
