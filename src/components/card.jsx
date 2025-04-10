@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import { cn } from "../lib/utils";
+import { Link } from "react-router-dom";
 
 export const Card = ({
   imageUrl,
@@ -61,11 +62,11 @@ export const Card = ({
             {description}
           </p>
           <div className="flex items-start gap-4">
-            <a href={gitUrl || "#"} target="_blank" rel="noopener noreferrer">
+            <Link to={projectUrl}>
               <button className="flex gap-2 px-4 py-2 bg-purple-700 text-sm rounded-2xl items-center justify-center text-slate-200">
-                Code <CodeIcon className="w-5 h-5" />
+                show <CodeIcon className="w-5 h-5" />
               </button>
-            </a>
+            </Link>
             <a href={liveUrl || "#"} target="_blank" rel="noopener noreferrer">
               <button className="flex gap-2 text-sm px-4 py-2 rounded-2xl items-center justify-center bg-purple-700 text-slate-200">
                 Live <Monitor className="w-5 h-5" />

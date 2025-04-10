@@ -32,16 +32,15 @@ const Project = () => {
               initial={{ opacity: 0, y: 150 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeIn" }}>
-              <Link to={`/projects/${data[0].id}`}>
-                <Card
-                  imageUrl={"/jira.png"}
-                  smallImageUrl={"/jira_sm.png"}
-                  title={"Jira Clone"}
-                  description={
-                    "An all rounder application for mangement of projects with adding tasks and a lot's more features."
-                  }
-                />
-              </Link>
+              <Card
+                imageUrl={"/jira.png"}
+                smallImageUrl={"/jira_sm.png"}
+                title={"Jira Clone"}
+                description={
+                  "An all rounder application for mangement of projects with adding tasks and a lot's more features."
+                }
+                projectUrl={`/projects/${data[0].id}`}
+              />
             </motion.div>
           </div>
           <div className="flex-none w-[80vw] h-[70vh]">
@@ -49,16 +48,15 @@ const Project = () => {
               initial={{ opacity: 0, y: 150 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeIn" }}>
-              <Link to={`/projects/${data[1].id}`}>
-                <Card
-                  imageUrl={"/food_app.png"}
-                  smallImageUrl={"/food_sm.png"}
-                  title={"Tasty"}
-                  description={
-                    "A robust appliaction with multiple user friendly features for ordering food to opening your own shop to sell everythng in one application."
-                  }
-                />
-              </Link>
+              <Card
+                imageUrl={"/food_app.png"}
+                smallImageUrl={"/food_sm.png"}
+                title={"Tasty"}
+                description={
+                  "A robust appliaction with multiple user friendly features for ordering food to opening your own shop to sell everythng in one application."
+                }
+                projectUrl={`/projects/${data[1].id}`}
+              />
             </motion.div>
           </div>
           <div className="flex-none w-[80vw] h-[70vh]">
@@ -66,17 +64,16 @@ const Project = () => {
               initial={{ opacity: 0, y: 150 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeIn" }}>
-              <Link to={`/projects/${data[2].id}`}>
-                <Card
-                  imageUrl={"/chat.png"}
-                  smallImageUrl={"/chat_sm.png"}
-                  title={"Bloom Chat"}
-                  description={
-                    "A robust chat application with multiple user friendly features."
-                  }
-                  liveUrl={"https://bloom-chat-app-2.onrender.com"}
-                />
-              </Link>
+              <Card
+                imageUrl={"/chat.png"}
+                smallImageUrl={"/chat_sm.png"}
+                title={"Bloom Chat"}
+                description={
+                  "A robust chat application with multiple user friendly features."
+                }
+                liveUrl={"https://bloom-chat-app-2.onrender.com"}
+                projectUrl={`/projects/${data[2].id}`}
+              />
             </motion.div>
           </div>
           <div className="flex-none w-[80vw] h-[70vh]">
@@ -84,16 +81,15 @@ const Project = () => {
               initial={{ opacity: 0, y: 150 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeIn" }}>
-              <Link to={`/projects/${data[3].id}`}>
-                <Card
-                  imageUrl={"/taskify.png"}
-                  smallImageUrl={"/taskify_sm.png"}
-                  title={"Taskify"}
-                  description={
-                    "An all rounder application for mangement of big projects with mutiple users  with many boards to plan and manage your projects and a lot's more features."
-                  }
-                />
-              </Link>
+              <Card
+                imageUrl={"/taskify.png"}
+                smallImageUrl={"/taskify_sm.png"}
+                title={"Taskify"}
+                description={
+                  "An all rounder application for mangement of big projects with mutiple users  with many boards to plan and manage your projects and a lot's more features."
+                }
+                projectUrl={`/projects/${data[3].id}`}
+              />
             </motion.div>
           </div>
         </motion.div>
