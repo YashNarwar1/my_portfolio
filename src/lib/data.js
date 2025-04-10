@@ -46,6 +46,7 @@ export const data = [
 • UI responsiveness: Ensured a smooth and responsive chat interface across devices.`,
     About: `Created using React, Node.js, Express, and Socket.io, this project demonstrates my ability to build interactive, scalable real-time applications with robust state and user management.`,
     Year: "2024",
+
     images: ["/assets/Bloom1.png", "/assets/Bloom2.png", "/assets/Bloom3.png"],
   },
   {

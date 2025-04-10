@@ -74,6 +74,7 @@ const Project = () => {
                   description={
                     "A robust chat application with multiple user friendly features."
                   }
+                  liveUrl={"https://bloom-chat-app-2.onrender.com"}
                 />
               </Link>
             </motion.div>
