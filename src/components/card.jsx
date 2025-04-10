@@ -12,6 +12,7 @@ export const Card = ({
   title,
   description,
   gitUrl,
+  projectUrl,
   liveUrl,
   visible,
 }) => {
