@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="flex flex-col my-20 mx-10 lg:w-[50%]">
         <h1 className="text-3xl tracking-tight">Hey, I'm Yash 👋🏻 </h1>
         <h2 className="text-6xl md:text-8xl tracking-wide text-black font-bold mb-10">
-          <span className="text-purple-800">Front</span>_End Developer
+          <span className="text-purple-800">Full_</span>Stack Developer
         </h2>
         <p className="text-slate-800 text-xl ">
           Crafting seamless digital experiences with clean code and creative

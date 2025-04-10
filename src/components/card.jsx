@@ -105,9 +105,9 @@ export const Card = ({
           {description}
         </p>
         <div className="flex items-start gap-4">
-          <a href={gitUrl} target="_blank" rel="noopener noreferrer">
+          <a href={projectUrl} target="_blank" rel="noopener noreferrer">
             <button className="flex gap-2 px-4 py-2 text-sm rounded-2xl items-center justify-center bg-purple-700 text-slate-200">
-              Code <CodeIcon className="w-5 h-5" />
+              Show <CodeIcon className="w-5 h-5" />
             </button>
           </a>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
