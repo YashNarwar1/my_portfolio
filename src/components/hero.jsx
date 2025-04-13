@@ -5,7 +5,7 @@ import { Button } from "./button";
 
 export const Hero = () => {
   return (
-    <div className="flex w-full md:min-h-[100vh] px-3 md:px-20 flex-col lg:flex-row mb-10  items-center    ">
+    <div className="flex w-full md:min-h-[100vh] px-3 md:px-20 flex-col  lg:flex-row mb-10 justfiy-center lg:items-center    ">
       <div className="flex flex-col my-20 mx-10 lg:w-[50%]">
         <h1 className="text-3xl tracking-tight">Hey, I'm Yash 👋🏻 </h1>
         <h2 className="text-6xl md:text-8xl tracking-wide text-black font-bold mb-10">

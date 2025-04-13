@@ -98,7 +98,7 @@ const Project = () => {
       {/* CTA button */}
       <div className="flex w-full justify-end pr-16 absolute bottom-0.5 right-0">
         <Link to="/projects">
-          <button className="w-[8rem] rounded-lg flex items-center justify-center gap-x-4 bg-purple-700 text-slate-200 px-4 py-2 mt-10 cursor-pointer hover:text-white hover:opacity-75">
+          <button className="w-[8rem] rounded-lg flex items-center justify-center gap-x-4 text-purple-600 bg-slate-200 px-4 py-2 mt-10 cursor-pointer hover:text-black hover:opacity-75">
             More
             <ArrowBigRightDashIcon className="w-5 h-5" />
           </button>

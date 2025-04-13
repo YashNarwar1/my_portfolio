@@ -25,11 +25,11 @@ const About = () => {
     <>
       <motion.div
         id="about"
-        className="w-full min-h-screen flex flex-col  mt-10 py-5 px-3 md:px-10">
+        className="w-full min-h-screen flex flex-col   mt-10 py-5 px-3 md:px-10">
         <h1 className="text-6xl font-bold tracking-wider   mb-10">
           About<span className="font-bold text-4xl text-purple-700">.</span>
         </h1>
-        <div className="flex lg:flex-row flex-col justify-between  px-4 ">
+        <div className="flex lg:flex-row flex-col justify-between lg:items-center h-full px-4 ">
           <div className="flex flex-1 flex-col  border-r-1 border-slate-300 gap-4">
             <h2 className="text-2xl font-bold tracking-wide mb-6 ">
               Skills
@@ -78,7 +78,7 @@ const About = () => {
               </span>
             </p>
           </div>
-          <div className="flex flex-1 flex-col px-1 mt-6 lg:mt-0">
+          <div className="flex flex-1 flex-col px-1  mt-6 lg:mt-0">
             <h1 className="text-2xl font-bold tracking-wider mb-8">
               Tec Stack<span className="font-bold text-4xl">.</span>
             </h1>
