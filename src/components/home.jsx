@@ -6,7 +6,7 @@ import { Footer } from "./footer";
 
 const Home = () => {
   return (
-    <div id="home" className="min-h-screen w-full   flex flex-col ">
+    <div id="home" className=" w-full flex flex-col ">
       <AnimatePresence>
         <Hero />
         <Project />

@@ -16,7 +16,7 @@ import ProjectIdPage from "./pages/projectIdPage";
 function App() {
   return (
     <>
-      <div className="w-full mx-auto bg-gradient-to-tr from-white via-slate-50 to-gray-100">
+      <div className=" max-w-[95rem] mx-auto bg-gradient-to-tr from-white via-slate-50 to-gray-100">
         <ScrollToTop />
         <Navbar />
         <MobileNav />

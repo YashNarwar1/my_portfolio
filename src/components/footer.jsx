@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { animate, motion } from "framer-motion";
+import { useRef } from "react";
 
 export const Footer = () => {
+  const targetHand = useRef();
+
   return (
     <div
       className="relative h-[600px] "
@@ -35,7 +39,7 @@ export const Footer = () => {
             </div>
             <div className="lg:py-20 py-10  ">
               <h1 className="text-2xl font-semibold text-end text-slate-200">
-                Hey there 👋🏻
+                Hey there <span ref={targetHand}>👋🏻</span>
               </h1>
               <h1 className="text-6xl md:text-[5rem] xl:text-[8rem] text-end text-slate-400">
                 I'm <span className="text-purple-700">Y.</span>Narwar

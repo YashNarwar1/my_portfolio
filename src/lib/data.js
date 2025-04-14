@@ -4,6 +4,7 @@ export const data = [
     title: "Jira Clone",
     description:
       "A comprehensive project management application with task tracking.",
+    bgImage: "/jira.png",
     imageUrl: "/jira2.png",
     smallImageUrl: "/jira_sm.png",
     Details: `A Jira-inspired project management tool built for seamless task tracking, issue handling, and team collaboration. Users can create, assign, and prioritize tasks with detailed statuses, labels, and deadlines. It features a Kanban board for workflow visualization and drag-and-drop task management.`,
@@ -17,6 +18,7 @@ export const data = [
   {
     id: "2",
     title: "Tasty",
+    bgImage: "/food_app.png",
     description:
       "A full-stack food ordering platform with roles for sellers and customers.",
     imageUrl: "/food2.png",
@@ -39,6 +41,7 @@ export const data = [
     description:
       "A real-time chat application with group and direct messaging.",
     imageUrl: "/chat2.png",
+    bgImage: "/chat.png",
     smallImageUrl: "/chat_sm.png",
     Details: `A real-time chat app enabling seamless one-on-one and group conversations. It supports message statuses, typing indicators, user profiles, and chat history. Built for responsiveness and smooth communication across all devices.`,
     Challenges: `• Real-time messaging: Integrated Socket.io for instant communication.
@@ -52,6 +55,7 @@ export const data = [
   {
     id: "4",
     title: "Taskify",
+    bgImage: "/taskify.png",
     description: "A feature-rich task management app for project planning.",
     imageUrl: "/taskify2.png",
     smallImageUrl: "/taskify_sm.png",
