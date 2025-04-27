@@ -17,7 +17,7 @@ const ProjectIdPage = () => {
   }
 
   const currentProject = data[currentIndex];
-  console.log(currentProject);
+
   const nextProjects = [
     data[(currentIndex + 1) % data.length], // Next project
     data[(currentIndex + 2) % data.length], // Second next project
@@ -30,7 +30,7 @@ const ProjectIdPage = () => {
         <h1 className="text-5xl md:text-7xl font-bold mb-4 ">
           {currentProject.title}
         </h1>
-        <p className="text-2xl md:text-3xl text-gray-700 mb-7 border-l-8 pl-6 py-6 border-purple-700">
+        <p className="text-2xl md:text-3xl text-gray-300 mb-7 border-l-8 pl-6 py-6 border-purple-700">
           {currentProject.description}
         </p>
         <Card
@@ -50,12 +50,12 @@ const ProjectIdPage = () => {
                   {currentProject.Year}
                 </span>
               </h2>
-              <p className="text-md md:text-xl text-slate-800 font-bold ">
+              <p className="text-md md:text-xl text-slate-300 font-bold ">
                 Personal Project
               </p>
             </div>
             <div className="flex  items-center gap-8">
-              <p className="text-sm md:text-lg font-semibold text-slate-800 tracking-wider mb-1 lg:mb-4 flex flex-col">
+              <p className="text-sm md:text-lg font-semibold text-slate-300 tracking-wider mb-1 lg:mb-4 flex flex-col">
                 Role:{" "}
                 <span className="text-md md:text-xl">Software Developer</span>
               </p>
@@ -72,15 +72,15 @@ const ProjectIdPage = () => {
             <h1 className="text-4xl font-bold tracking-wider">
               Project Details
             </h1>
-            <p className="text-xl text-slate-700  p-4 mb-8">
+            <p className="text-xl text-slate-300  p-4 mb-8">
               {currentProject.Details}
             </p>
             <h1 className="text-4xl font-bold tracking-wider">Challenges</h1>
-            <p className="text-xl text-slate-700  p-4 mb-8">
-              {currentProject.Challanges}
+            <p className="text-xl text-slate-300  p-4 mb-8">
+              {currentProject.Challenges}
             </p>
             <h1 className="text-4xl font-bold tracking-wider">About</h1>
-            <p className="text-xl text-slate-700  p-4 mb-8">
+            <p className="text-xl text-slate-300  p-4 mb-8">
               {currentProject.About}
             </p>
           </div>

@@ -54,7 +54,7 @@ export const CardProjects = ({
           <LucideCircleArrowOutUpRight className="w-5 h-5 hover:text-purple-700 border-1 cursor-pointer" />{" "}
         </a>
       </div>
-      <p className="text-lg text-slate-500 ">{description}</p>
+      <p className=" text-slate-800 font-light text-2xl mb-5">{description}</p>
     </div>
   );
 };

@@ -36,22 +36,22 @@ const About = () => {
               <span className="text-4xl font-bold text-purple-700">.</span>
             </h2>
             <div className="ml-10 lg:ml-1 flex flex-col gap-4 mb-6 font-semibold tracking-wider">
-              <p className="text-lg text-slate-600 ">Web Design</p>
-              <p className="text-lg text-slate-600">UI/UX</p>
-              <p className="text-lg text-slate-600">
+              <p className="text-lg text-slate-300 ">Web Design</p>
+              <p className="text-lg text-slate-300">UI/UX</p>
+              <p className="text-lg text-slate-300">
                 Frontend/Backend Development
               </p>
-              <p className="text-lg text-slate-600">
+              <p className="text-lg text-slate-300">
                 Database management (SQL / NoSql)
               </p>
-              <p className="text-lg text-slate-600">
+              <p className="text-lg text-slate-300">
                 Data Structure & Algorithms
               </p>
-              <p className="text-lg text-slate-600">
+              <p className="text-lg text-slate-300">
                 Fluent/Effective Communication (English)
               </p>
-              <p className="text-lg text-slate-600">Problem Solving</p>
-              <p className="text-lg text-slate-600">Leadership</p>
+              <p className="text-lg text-slate-300">Problem Solving</p>
+              <p className="text-lg text-slate-300">Leadership</p>
             </div>
           </div>
           <div className="flex flex-1 flex-col  ml-4 border-r border-slate-300">
@@ -59,7 +59,7 @@ const About = () => {
               About Me
               <span className="font-bold text-4xl text-purple-700">.</span>
             </h1>
-            <p className="text-lg text-slate-600 tracking-normal px-3 my-4 leading-relaxed">
+            <p className="text-lg text-slate-300 tracking-normal px-3 my-4 leading-relaxed">
               👋 Hi, I'm Yash Nawar, a Full Stack Developer specializing in
               JavaScript & TypeScript. I build scalable, high-performance web
               applications using Next.js, Node.js, and MongoDB. Passionate about

@@ -8,14 +8,12 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
   const targetRef = useRef(null);
-  // A reference to the inner horizontal scroll container to measure its width
+
   const scrollContainerRef = useRef(null);
   const { isMobile } = sizeIsMobile();
 
-  // State to store the horizontal scrollable width offset
   const [maxScrollX, setMaxScrollX] = useState(0);
 
-  // Set up scroll measurement after component mounts and on resize
   useEffect(() => {
     const measureScrollWidth = () => {
       if (scrollContainerRef.current) {
@@ -32,7 +30,6 @@ const Project = () => {
     return () => window.removeEventListener("resize", measureScrollWidth);
   }, []);
 
-  // Set up vertical scroll progress
   const { scrollYProgress } = useScroll({ target: targetRef });
 
   const x = useTransform(scrollYProgress, [0, 1], [0, -maxScrollX]);

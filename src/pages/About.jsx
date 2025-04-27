@@ -148,7 +148,7 @@ const About = () => {
             My Story
             <span className="text-6xl font-bold text-purple-700">.</span>
           </h1>
-          <p className="px-3 text-lg md:text-xl text-slate-700">
+          <p className="px-3 text-lg md:text-xl text-slate-200 font-light tracking-wide leading-8 mb-10">
             My journey into web development began with pure curiosity and a
             drive for creativity. Despite graduating with a degree in Economics
             and English, I was drawn to the limitless possibilities of building

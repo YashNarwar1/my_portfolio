@@ -10,7 +10,7 @@ export const MobileNav = () => {
   };
 
   return (
-    <div className="w-[100%] bg-white md:hidden flex flex-col justify-between p-4 relative">
+    <div className="w-[100%] bg-slate-800 md:hidden flex flex-col justify-between p-4 relative">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">
           YashNW<span className="font-bold text-purple-800">.</span>

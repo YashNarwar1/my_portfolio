@@ -9,7 +9,7 @@ export const Footer = () => {
     <div
       className="relative h-[600px] "
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0% 100%)" }}>
-      <div className=" h-[600px] w-full  right-0 bg-[#1C1C1C] px-5 sm:px-15 fixed bottom-0">
+      <div className=" h-[600px] w-full  right-0 bg-black px-5 sm:px-15 fixed bottom-0">
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col lg:flex-row justify-between w-full">
             <div className="flex lg:gap-14 max-w-[50%] py-10">
@@ -49,7 +49,7 @@ export const Footer = () => {
           <div className="flex gap-4 flex-col lg:flex-row py-10 justify-between w-full">
             <Link
               to="/contact"
-              className="px-10  py-1 h-[3rem] flex justify-center items-center rounded-xl text-lg border-1 bg-slate-300">
+              className="px-10  py-1 h-[3rem] flex justify-center items-center rounded-xl text-lg border-1 bg-slate-300 text-black">
               Let's Connect
             </Link>
             <p className="text-md text-slate-300 tracking-wide">
